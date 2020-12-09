@@ -112,6 +112,7 @@ public class TransactionSupportTests {
 
 	@Test
 	public void commitWithExistingTransaction() {
+		//测试提交
 		TestTransactionManager tm = new TestTransactionManager(true, true);
 		TransactionStatus status = tm.getTransaction(null);
 		tm.commit(status);
